@@ -1,5 +1,5 @@
 let tasks = [{checked: 0, content:"test"}];
-
+// Updating task list when a new entry comes in
 $(document).ready(() => {
     $("#task-form").submit((event)=>{
         var task = { 
@@ -18,6 +18,7 @@ $(document).ready(() => {
 //     tasks.append(task)
 // }
 
+// Deleting a task from the list when trash button is pushed
 $(document).ready(() => {
 	$(".trash-button").click(() => {
         tasks = tasks.filter((el) => {
@@ -34,7 +35,7 @@ $(document).ready(() => {
   })
 });
 
-// initiate list buttons
+// Initiate list buttons
 var unchecked_box = '<button class="check-button"><i class="far fa-square"></i></button>'
 var checked_box = '<button class="check-button"><i class="far fa-check-square"></i></button>'
 var trash = '<button class="trash-button"><i class="far fa-trash-alt"></i></button>'
@@ -55,6 +56,7 @@ $(document).ready(() => {
     })
 })
 
+// updating list function
 function update() {
     var str = '<ul>'
     tasks.forEach(task => {
