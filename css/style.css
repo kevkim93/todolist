@@ -26,7 +26,7 @@ input{
     order: 0;
 }
 
-#submitButton {
+#submit-button {
     order: 1;
     margin: auto;
     padding:10px 15px;
@@ -38,9 +38,41 @@ input{
     border: none;
 }
 
-
 h3 {
     color: #333;
     text-align: center;
 }
-  
+
+.trash-button {
+    border: none;
+    background-color:#fff;
+}
+
+.check-button {
+    border: none;
+    background-color:#fff;
+}
+
+
+#task-list {
+    margin:auto;
+    text-align:center;
+    font-size: 25px;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+.button:focus {
+    background-color: #333;
+}
+
+.fa-trash-alt:hover {
+    color: rgb(173, 18, 18);
+}
+
+li {
+    list-style-type: none; 
+}
