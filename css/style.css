@@ -37,8 +37,8 @@ input{
 .trash-button{
     float: right;
     border: none;
-    background-color:#fff;
-    padding: 4.2px 6px;
+    background-color:transparent;
+    padding: 4.2px 8px;
 }
 
 .fa-trash-alt:hover {
@@ -48,8 +48,8 @@ input{
 .check-button {
     float: left;
     border: none;
-    background-color:#fff;
-    padding: 4.2px 6px;
+    background-color: transparent;
+    padding: 4.2px 8px;
 }
 
 /* prevents highlighting buttons */
