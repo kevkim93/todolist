@@ -4,21 +4,19 @@ body {
     background-color: darkslategray;
 }
   
+h3 {
+    color: #333;
+    text-align: center;
+}
+
 .flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-  
-#taskslabel {
-    display:block;
-    text-align:center;
 
-}
-  
 #input-block {
     margin: auto;
-    /* width:50%; */
     padding:15px;
 }
 
@@ -30,36 +28,31 @@ input{
     order: 1;
     margin: auto;
     padding:10px 15px;
-}
-
-.button {
     background-color: #333;
     color: #fff; 
     border: none;
 }
 
-h3 {
-    color: #333;
-    text-align: center;
-}
 
-.trash-button {
+.trash-button{
+    float: right;
     border: none;
     background-color:#fff;
+    padding: 4.2px 6px;
+}
+
+.fa-trash-alt:hover {
+    color: rgb(173, 18, 18);
 }
 
 .check-button {
+    float: left;
     border: none;
     background-color:#fff;
+    padding: 4.2px 6px;
 }
 
-
-#task-list {
-    margin:auto;
-    text-align:center;
-    font-size: 25px;
-}
-
+/* prevents highlighting buttons */
 button:focus {
     outline: none;
     box-shadow: none;
@@ -69,10 +62,23 @@ button:focus {
     background-color: #333;
 }
 
-.fa-trash-alt:hover {
-    color: rgb(173, 18, 18);
+#task-list {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 25px;
 }
 
 li {
     list-style-type: none; 
+    width:100%;
+}
+
+li.checked1{
+    background-color: rgba(32, 94, 94, 0.582);
+    text-decoration: line-through darkslategray;
+}
+
+span {
+    float: center;
 }
